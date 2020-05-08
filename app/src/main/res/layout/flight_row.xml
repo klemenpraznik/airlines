@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/takeOffLocation"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="203dp"
+            android:layout_marginRight="203dp"
+            android:layout_toEndOf="@+id/imageViewTakeOff"
+            android:layout_toRightOf="@+id/imageViewTakeOff"
+            android:text="Take_off" />
+
+        <TextView
+            android:id="@+id/landingLocation"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/takeOffLocation"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="175dp"
+            android:layout_marginRight="175dp"
+            android:layout_toEndOf="@+id/imageViewLanding"
+            android:layout_toRightOf="@+id/imageViewLanding"
+            android:text="landing_location" />
+
+        <TextView
+            android:id="@+id/takeOffDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="01.01.2020 08:00" />
+
+        <TextView
+            android:id="@+id/landingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/takeOffDate"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="01.02.2020 09:00" />
+
+        <ImageView
+            android:id="@+id/imageViewTakeOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/airplane_take_off" />
+
+        <ImageView
+            android:id="@+id/imageViewLanding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewTakeOff"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/airplane_landing" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

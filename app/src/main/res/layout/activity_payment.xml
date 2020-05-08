@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reservation.PaymentActivity">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/people" />
+
+    <TextView
+        android:id="@+id/pNumberOfPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Število potnikov:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Skupna cena:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Plačilo s kreditno kartico"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/divider8" />
+
+    <TextView
+        android:id="@+id/pFlightClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Cena leta:"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/pNumberOfPeople" />
+
+    <TextView
+        android:id="@+id/pFlightClass3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text="CCV:"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber1" />
+
+    <TextView
+        android:id="@+id/pReturnFlightClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Cena povratnega leta:"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/pFlightClass" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@drawable/airplane_landing" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/pReturnFlightClass"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider7"
+        app:srcCompat="@drawable/price" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider8"
+        app:srcCompat="@drawable/card_payment" />
+
+    <EditText
+        android:id="@+id/tName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="16"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:hint="Ime lastnika kartice"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/label1" />
+
+    <EditText
+        android:id="@+id/cardOwnerSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="16"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:hint="Priimek lastnika kartice"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/tName" />
+
+    <EditText
+        android:id="@+id/cardNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="4"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:hint="XXXX"
+        android:inputType="textPersonName"
+        android:maxLength="4"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/cardOwnerSurname" />
+
+    <EditText
+        android:id="@+id/cardCCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="4"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:hint="123"
+        android:inputType="textPersonName"
+        android:maxLength="3"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/pFlightClass3"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber1" />
+
+    <EditText
+        android:id="@+id/cardNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="4"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:hint="XXXX"
+        android:inputType="textPersonName"
+        android:maxLength="4"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/cardNumber1"
+        app:layout_constraintTop_toBottomOf="@+id/cardOwnerSurname" />
+
+    <EditText
+        android:id="@+id/cardNumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="4"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:hint="XXXX"
+        android:inputType="textPersonName"
+        android:maxLength="4"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/cardNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/cardOwnerSurname" />
+
+    <EditText
+        android:id="@+id/cardNumber4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="4"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:hint="XXXX"
+        android:inputType="textPersonName"
+        android:maxLength="3"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/cardNumber3"
+        app:layout_constraintTop_toBottomOf="@+id/cardOwnerSurname" />
+
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:text="Plačaj"
+        android:onClick="pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorRed"
+        android:text="Prekliči"
+        android:onClick="cancelReservation"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

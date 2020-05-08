@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AdrijaErlajns</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_close">Zapri</string>
+
+    <string-array name="locations">
+        <item>Ljubljana</item>
+        <item>Belgrade</item>
+        <item>Zagreb</item>
+        <item>Berlin</item>
+    </string-array>
+</resources>
